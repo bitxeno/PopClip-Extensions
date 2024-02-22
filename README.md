@@ -44,3 +44,7 @@ Options:
 - [PopClip Extensions on GitHub][popext-github]
 - [PopClip Extension Docs][docs]
 
+[popext-website]: https://www.popclip.app/extensions/
+[popext-github]: https://github.com/pilotmoon/PopClip-Extensions
+[docs]: https://www.popclip.app/dev/
+
