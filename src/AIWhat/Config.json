@@ -1,0 +1,26 @@
+{
+  "name": "AIWhat",
+  "icon": "iconify:simple-icons:askubuntu",
+  "identifier": "xyz.phpz.popclip.extension.aiwhat",
+  "description": "Use ChatGPT API to ask what is it?",
+  "app": {
+    "name": "ChatGPT",
+    "link": "https://openai.com/blog/chatgpt"
+  },
+  "popclipVersion": 4069,
+  "module": "what.js",
+  "entitlements": ["text", "paste", "network"],
+  "options": [
+    {
+      "identifier": "api_url",
+      "label": "API Url",
+      "type": "string",
+      "defaultValue": "https://api.openai.com"
+    },
+    {
+      "identifier": "api_key",
+      "label": "API Key",
+      "type": "string"
+    }
+  ]
+}

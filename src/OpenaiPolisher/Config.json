@@ -1,0 +1,26 @@
+{
+  "name": "OpenAI Polisher",
+  "icon": "wand.svg",
+  "identifier": "xyz.phpz.popclip.extension.openaipolisher",
+  "description": "Use ChatGPT API to polish and correct grammar for text.",
+  "app": {
+    "name": "ChatGPT",
+    "link": "https://openai.com/blog/chatgpt"
+  },
+  "popclipVersion": 4069,
+  "module": "polisher.js",
+  "entitlements": ["text", "paste", "network"],
+  "options": [
+    {
+      "identifier": "api_url",
+      "label": "API Url",
+      "type": "string",
+      "defaultValue": "https://api.openai.com"
+    },
+    {
+      "identifier": "api_key",
+      "label": "API Key",
+      "type": "string"
+    }
+  ]
+}

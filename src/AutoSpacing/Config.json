@@ -1,0 +1,13 @@
+{
+  "name": "AutoSpacing",
+  "icon": "fluent--font-space.svg",
+  "identifier": "com.bitxeno.popclip.extension.autospacing",
+  "description": "Auto add spacing between CJK and english words.",
+  "app": {
+    "name": "pangu",
+    "link": "https://github.com/vinta/pangu.js"
+  },
+  "popclipVersion": 4069,
+  "module": "main.js",
+  "entitlements": ["text", "paste"]
+}
