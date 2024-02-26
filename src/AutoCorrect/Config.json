@@ -1,0 +1,22 @@
+{
+  "name": "AutoCorrect",
+  "icon": "square CJK",
+  "identifier": "com.bitxeno.popclip.extension.autocorrect",
+  "description": "Formatting CJK",
+  "app": {
+    "name": "autocorrect",
+    "link": "https://github.com/huacnlee/autocorrect"
+  },
+  "popclipVersion": 4069,
+  "shellScriptFile": "autocorrect.sh",
+  "interpreter": "/bin/bash",
+  "stdin": "text",
+  "title": {
+      "en": "Formatting CJK",
+      "zh-Hans": "格式化 CJK",
+      "zh-Hant": "格式化 CJK",
+      "ja": "CJK のフォーマット"
+  },
+  "after": "preview-result",
+  "entitlements": ["text", "paste"]
+}

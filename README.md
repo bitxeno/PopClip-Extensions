@@ -27,16 +27,19 @@ Options:
 
 - [AIWhat](./dist/AIWhat.popclipextz)
 
-  > Ask OpenGPT What is it? Inspired by [iWhat](https://github.com/yihong0618/iWhat)
+> 询问 OpenAI 这是什么？灵感来自[iWhat](https://github.com/yihong0618/iWhat)。
 
 - [OpenaiPolisher](./dist/OpenaiPolisher.popclipextz)
 
-  > Polishing text by OpenGPT, Inspired by [bob-plugin-openai-polisher](https://github.com/yetone/bob-plugin-openai-polisher)
+> 通过 OpenAI 进行文本润色，灵感来自来自[bob-plugin-openai-polisher](https://github.com/yetone/bob-plugin-openai-polisher)。
 
 - [AutoSpacing](./dist/AutoSpacing.popclipextz)
 
-  > Auto add spacing between CJK and english words.
+  > 使用[pangu](https://github.com/vinta/pangu.js)为 CJK 语句自动添加空格
 
+- [AutoCorrect](./dist/AutoCorrect.popclipextz)
+
+  > 使用[autocorrect](https://github.com/huacnlee/autocorrect)格式化 CJK 语句
 
 ## References
 
