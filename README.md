@@ -35,11 +35,11 @@ Options:
 
 - [AutoSpacing](./dist/AutoSpacing.popclipextz)
 
-  > 使用[pangu](https://github.com/vinta/pangu.js)为 CJK 语句自动添加空格
+> 使用[pangu](https://github.com/vinta/pangu.js)为 CJK 语句自动添加空格
 
 - [AutoCorrect](./dist/AutoCorrect.popclipextz)
 
-  > 使用[autocorrect](https://github.com/huacnlee/autocorrect)格式化 CJK 语句
+> 使用[autocorrect](https://github.com/huacnlee/autocorrect)格式化 CJK 语句
 
 ## References
 

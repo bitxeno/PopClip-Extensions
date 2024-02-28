@@ -17,6 +17,6 @@
       "zh-Hant": "格式化 CJK",
       "ja": "CJK のフォーマット"
   },
-  "after": "preview-result",
+  "after": "paste-result",
   "entitlements": ["text", "paste"]
 }
