@@ -1,6 +1,6 @@
 // #popclip extension for OpenAI Compatible Polishing
 // name: AI Polishing
-// icon: "iconify:hugeicons:translation"
+// icon: "iconify:proicons:draw-text"
 // language: javascript
 // module: true
 // entitlements: [network]
