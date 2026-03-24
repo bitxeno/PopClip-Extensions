@@ -1,6 +1,6 @@
 // #popclip extension for OpenAI Compatible Translate
 // name: AI Translate
-// icon: "iconify:mdi:alpha-e-circle"
+// icon: "iconify:hugeicons:translation"
 // language: javascript
 // module: true
 // entitlements: [network]
