@@ -64,7 +64,7 @@ async function generateContent(input, options) {
 }
 
 exports.actions = [{
-  title: "AI Polishing",
+  title: {"en": "AI Polishing", "zh-hans": "AI 润色"},
   after: "paste-result",
   code: async (input, options) => generateContent(input, options),
 }];

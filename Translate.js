@@ -68,7 +68,7 @@ async function generateContent(input, options) {
 }
 
 exports.actions = [{
-  title: "AI Translate",
+  title: {"en": "AI Translate", "zh-hans": "AI 翻译"},
   after: "paste-result",
   code: async (input, options) => generateContent(input, options),
 }];
