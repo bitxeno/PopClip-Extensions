@@ -23,22 +23,19 @@
 //    defaultValue: 'gpt-4o-mini',
 //    description: 'Enter model name (e.g. gpt-4o-mini, gpt-4o, deepseek-chat)'
 //  }, {
-//   identifier: roleprompt, label: 'Role Prompt', type: string,
-//   defaultValue: "You are an expert translator, translate directly without explanation.",
-//   description: 'System prompt for the AI'
-// },{
-//   identifier: userprompt, label: 'User Prompt', type: string,
-//   defaultValue: "Please edit the following sentences in same language to improve clarity, conciseness, and coherence, making them match the expression of native speakers.",
-//   description: 'User prompt template'
+//   identifier: prompt, label: 'Polishing Prompt', type: string,
+//   defaultValue: "You are an expert translator, translate directly without explanation.\n\nPlease edit the following sentences in same language to improve clarity, conciseness, and coherence, making them match the expression of native speakers.\n\n{input}",
+//   description: 'Enter the prompt template using {input} as a placeholder for the text'
 // }]
 
 const axios = require("axios");
 
 async function generateContent(input, options) {
+  const prompt = options.prompt.replace('{input}', input.text);
   const requestBody = {
     "model": options.model,
     "messages": [
-      { "role": "user", "content": options.roleprompt + '\n\n' + options.userprompt + '\n\n' + input.text }
+      { "role": "user", "content": prompt }
     ],
     "temperature": parseFloat(options.temperature) || 0.7,
     "max_tokens": 8192,
