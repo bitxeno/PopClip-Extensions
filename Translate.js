@@ -9,18 +9,13 @@
 //   description: 'Enter your API key'
 // },
 // {
-//   identifier: temperature, label: 'Temperature', type: string,
-//   defaultValue: '0.7',
-//   description: 'Sampling temperature (0-2, default: 0.7)'
-// },
-// {
 //   identifier: baseuri, label: 'Base URI', type: string,
 //   defaultValue: 'https://api.openai.com/v1',
 //   description: 'API base URI including API version (default: https://api.openai.com/v1)'
 // },
 // {
 //    identifier: model, label: 'Model', type: string,
-//    defaultValue: 'gpt-4o-mini',
+//    defaultValue: 'gpt-5.4-mini',
 //    description: 'Enter model name (e.g. gpt-4o-mini, gpt-4o, deepseek-chat)'
 //  }, {
 //   identifier: prompt, label: 'Translate Prompt', type: string,
@@ -30,6 +25,11 @@
 //    identifier: tolang, label: 'Language', type: multiple,
 //    values:['English','Chinese','Russian','French','Português','Spanish'],
 //    description: 'The language to be translated'
+// },
+// {
+//   identifier: temperature, label: 'Temperature', type: string,
+//   defaultValue: '0.7',
+//   description: 'Sampling temperature (0-2, default: 0.7)'
 // }]
 
 const axios = require("axios");
