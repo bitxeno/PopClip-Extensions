@@ -9,9 +9,14 @@
 //   description: 'Enter your API key'
 // },
 // {
+//   identifier: temperature, label: 'Temperature', type: string,
+//   defaultValue: '0.7',
+//   description: 'Sampling temperature (0-2, default: 0.7)'
+// },
+// {
 //   identifier: baseuri, label: 'Base URI', type: string,
-//   defaultValue: 'https://api.openai.com',
-//   description: 'API base URI (default: OpenAI API)'
+//   defaultValue: 'https://api.openai.com/v1',
+//   description: 'API base URI including API version (default: https://api.openai.com/v1)'
 // },
 // {
 //    identifier: model, label: 'Model', type: string,
@@ -36,15 +41,15 @@ async function generateContent(input, options) {
     "messages": [
       { "role": "user", "content": prompt }
     ],
-    "temperature": 1.0,
+    "temperature": parseFloat(options.temperature) || 0.7,
     "max_tokens": 8192,
     "top_p": 0.95
   };
 
   try {
-    const baseUrl = options.baseuri || 'https://api.openai.com';
+    const baseUrl = options.baseuri || 'https://api.openai.com/v1';
     const response = await axios.post(
-      `${baseUrl}/v1/chat/completions`,
+      `${baseUrl}/chat/completions`,
       requestBody,
       {
         headers: {
