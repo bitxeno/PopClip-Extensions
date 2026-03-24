@@ -38,8 +38,7 @@ async function generateContent(input, options) {
   const requestBody = {
     "model": options.model,
     "messages": [
-      { "role": "system", "content": options.roleprompt },
-      { "role": "user", "content": options.userprompt + '\n\n' + input.text }
+      { "role": "user", "content": options.roleprompt + '\n\n' + options.userprompt + '\n\n' + input.text }
     ],
     "temperature": parseFloat(options.temperature) || 0.7,
     "max_tokens": 8192,
